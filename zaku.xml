@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="rockchip-linux"
+           fetch="https://github.com/rockchip-linux/"/>
+
+  <remote  name="96rocks"
+	       fetch="https://github.com/96rocks"/>
+
+  <default revision="master"
+           remote="rockchip-linux"
+           sync-j="4" />
+
+  <project path="kernel" remote="96rocks" name="kernel" upstream="release-4.4-zaku" revision="release-4.4-zaku"/>
+  <project path="u-boot" remote="96rocks" name="u-boot" upstream="rk3399-pie-zaku" revision="rk3399-pie-zaku"/>
+  <project path="rootfs" remote="rockchip-linux" name="rk-rootfs-build" />
+  <project path="rkbin" remote="96rocks" name="rkbin" revision="29mirror"/>
+
+  <project path="build" remote="96rocks" name="build" revision="debian">
+	  <copyfile dest="README.md" src="README.md"/>
+  </project>
+  
+</manifest>
