@@ -66,8 +66,8 @@ Build DockerFile
 
 ### Download source code
 ```bash
-    $ mkdir rockpi-n10-android8
-    $ cd rockpi-n10-android8
+    $ mkdir ficus2
+    $ cd ficus2
 ```
 Then run:
 ```bash
